@@ -20,10 +20,21 @@
 
 // macro code
 
-#define statement printf("Hello world");
-#include<stdio.h>
+// #define statement printf("Hello world");
+// #include<stdio.h>
 
+// int main(){
+//     statement
+//     return 0;
+// }
+
+
+// macro with arguments
+
+#define area(x) (3.14*x*x)
+#include<stdio.h>
 int main(){
-    statement
+    float a = area(3);
+    printf("Area is %f",a);
     return 0;
 }
